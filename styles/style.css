@@ -14,10 +14,9 @@ body {
     width: 75vw;
     padding: 0;
     /* border: 2px solid red; */
-    min-height: 1322px;
+    /* min-height: 1322px; */
     margin: 0 auto;
-    background: rgba(255, 144, 14, 0.1);
-    background: rgba(255, 144, 14, 0.1);
+    /* background: rgba(255, 144, 14, 0.1); */
 
 }
 
@@ -109,3 +108,24 @@ body {
 }
 
 /* quick list styles */
+.quick-list-container{
+    margin-top: 50px;
+}
+.quick-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 70px;
+    align-items: center;
+}
+.quick-list-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+/* feature list styles */
+.feature-list-container{
+    margin-top: 130px;
+}
+
