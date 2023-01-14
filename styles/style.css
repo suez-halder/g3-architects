@@ -14,9 +14,10 @@ body {
     width: 75vw;
     padding: 0;
     /* border: 2px solid red; */
-    background: rgba(255, 144, 14, 0.1);
     min-height: 1322px;
     margin: 0 auto;
+    background: rgba(255, 144, 14, 0.1);
+    background: rgba(255, 144, 14, 0.1);
 
 }
 
@@ -24,13 +25,10 @@ body {
     background-color: #FF900E;
     border-radius: 8px;
     color: white;
-    max-width: 180px;
-    min-height: 64px;
     font-weight: 600;
     font-size: 20px;
-    text-align: center;
-    padding: 20px 25px;
     margin: 0 auto;
+    padding: 20px 25px;
 }
 
 /* header styles */
@@ -65,23 +63,35 @@ body {
 }
 
 /* banner styles */
-.banner-container {}
+.banner-container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
 
 .banner-title {
     font-weight: 700;
     font-size: 4rem;
     text-align: center;
     max-width: 862px;
-    min-height: 225px;
-    /* border: 2px solid red; */
+    /* min-height: 225px; */
     margin: 0 auto;
+    /* border: 2px solid red; */
+    margin-bottom: 30px;
+
+    
 }
 
 .banner-sub-title {
     text-align: center;
     max-width: 868px;
-    min-height: 52px;
     margin: 0 auto;
+    margin-bottom: 30px;
+    
 }
 
 .banner-image img {
@@ -89,3 +99,13 @@ body {
     height: auto;
 }
 
+
+.banner-button {
+    /* left: 40%;
+    position: relative; */
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* quick list styles */
