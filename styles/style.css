@@ -35,8 +35,6 @@ body {
     border: none;
 }
 
-
-
 /* ----------------
 header styles
 ------------------- */
@@ -61,7 +59,6 @@ header styles
     display: flex;
     justify-content: space-between;
 
-
 }
 
 .feature {
@@ -81,7 +78,6 @@ banner section styles
     flex-direction: column;
     justify-content: center;
 
-
 }
 
 .banner-title {
@@ -91,8 +87,6 @@ banner section styles
     max-width: 862px;
     margin: 0 auto;
     margin-bottom: 30px;
-
-
 }
 
 .banner-sub-title {
@@ -168,17 +162,13 @@ feature list section styles
 .feature-list-subtitle {
     color: #727272;
 
-
 }
 
 .features-love-enjoy {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 20px;
-
-
 }
-
 
 .feature-enjoy {
     background: #FFFFFF;
@@ -283,8 +273,6 @@ testimonial-section styles
 --------------------------- */
 .our-project-section {
     text-align: center;
-
-
 }
 
 .our-project-title {
@@ -315,7 +303,6 @@ sponsor styles
 }
 
 .sponsor-heading {
-    /* width: 50%; */
     margin-top: 100px;
     text-align: center;
 
@@ -362,7 +349,9 @@ footer styles
     align-items: center;
 }
 
-/* media queries */
+/* -----------
+media queries 
+---------------*/
 
 @media screen and (max-width:576px) {
     body {
@@ -435,7 +424,6 @@ footer styles
         position: static;
         width: 100%;
         margin-top: 50px;
-        /* scale: 0.5; */
     }
 
     .fact-heading {
