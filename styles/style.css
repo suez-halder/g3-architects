@@ -10,21 +10,12 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    /* margin: auto 240px; */
-    /* width: 75vw; */
     padding: 0;
     margin-bottom: 130px;
-
-    /* border: 2px solid red; */
-    /* height: 1322px; */
-    /* margin: 0 auto; */
     background-image: url(../images/rgba\(255\,\ 144\,\ 14\,\ 0.1\).png);
     background-repeat: no-repeat;
-    background-size: 100% 27%;
-    background-position: fixed;
+    background-size: 100% 24%;
     zoom: 0.8;
-
-
 }
 
 .container {
@@ -46,7 +37,9 @@ body {
 
 
 
-/* header styles */
+/* ----------------
+header styles
+------------------- */
 
 .nav-bar {
     display: flex;
@@ -78,7 +71,9 @@ body {
     color: var(--secondary-color);
 }
 
-/* banner styles */
+/* --------------------
+banner section styles 
+-----------------------*/
 .banner-section {
     margin: 0 auto;
     width: 100%;
@@ -94,9 +89,7 @@ body {
     font-size: 4rem;
     text-align: center;
     max-width: 862px;
-    /* min-height: 225px; */
     margin: 0 auto;
-    /* border: 2px solid red; */
     margin-bottom: 30px;
 
 
@@ -119,18 +112,16 @@ body {
 
 
 .banner-button {
-    /* left: 40%;
-    position: relative; */
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
 
-/* quick list styles */
+/* ---------------------
+quick list section styles
+------------------------- */
 .quick-list-section {
     margin-top: 100px;
-
-
 }
 
 .quick-list {
@@ -152,7 +143,9 @@ body {
     grid-row-gap: 10px;
 }
 
-/* feature list styles */
+/* ----------------------
+feature list section styles
+-------------------------- */
 .feature-list-section {
     margin-top: 130px;
     display: grid;
@@ -161,6 +154,9 @@ body {
 
 
 }
+.feature-list-heading{
+    margin-bottom: 30px;
+}
 
 .feature-list-title {
     font-size: 45px;
@@ -168,8 +164,9 @@ body {
     padding-left: 20px;
 }
 
-.feature-list-subtitle {
+.feature-list-subtitle{
     color: #727272;
+    
 
 }
 
@@ -178,7 +175,6 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 20px;
 
-    /* width: 100%; */
 
 }
 
@@ -223,9 +219,9 @@ body {
     right: 30px;
 }
 
-/* ------
-facts 
---------*/
+/* ----------------
+fact section styles 
+--------------------*/
 .fact-heading {
     width: 50%;
     margin-top: 130px;
@@ -267,6 +263,30 @@ facts
     margin-bottom: 5px;
 }
 
+/* -----------------------
+testimonial-section styles
+--------------------------- */
+.our-project-section{
+    text-align: center;
+    
+    
+}
+.our-project-title{
+    margin-top: 100px;
+    font-size: 2.8rem;
+}
+.our-projects{
+    margin: 0 auto;
+    color: #727272;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    border-top: 1px solid #727272;
+    
+}
+
 /* -------------
 sponsor styles 
 ----------------*/
@@ -274,13 +294,12 @@ sponsor styles
 
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 
 }
 
 .sponsor-heading {
     /* width: 50%; */
-    margin-top: 150px;
+    margin-top: 100px;
     text-align: center;
     
 }
@@ -328,7 +347,7 @@ footer styles
 
 @media screen and (max-width:576px) {
     body {
-        background-size: 100% 16.5%;
+        background-size: 100% 13%;
         margin-left: 50px;
         margin-right: 50px;
 
@@ -344,18 +363,29 @@ footer styles
     }
     .features {
         padding-left: 0px;
+        align-items: center;
     }
-    .feature-mobile{
-        margin-left: 0;
+ 
+    .feature{
+        margin: 10px;
+    }
+    .banner-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     .quick-list-section {
-        margin-top: 80px;
+        margin-top: 100px;
     }
 
     .quick-list {
         grid-template-columns: repeat(1, 1fr);
 
+    }
+    .quick-list-sub-title{
+        margin-bottom: 30px;
     }
 
     .quick-list-images {
@@ -373,24 +403,33 @@ footer styles
     .feature-list-section{
         grid-template-columns: repeat(1, 1fr)
     }
+    .features-love-enjoy{
+        margin-bottom: 50px;
+    }
     .experience-button{
         position: static;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 50px;
         /* scale: 0.5; */
     }
     .fact-heading{
         width: 100%;
         text-align: center;
+        margin-top: 50px;
     }
     .some-fact-boxes{
+        margin-top: -50px;
         flex-direction: column;
     }
+    
     .sponsor-title{
-        margin-top: -100px;
+        margin-top: -50px;
     }
     .sponsor-list{
         flex-wrap: wrap;
+    }
+    .footer-section{
+        height: auto;
     }
     .footer-container{
         width: 100%;
