@@ -132,12 +132,14 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 54px;
+
 }
 
 .features-love-enjoy {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 20px;
+    /* width: 100%; */
 
 }
 
@@ -149,4 +151,30 @@ body {
     padding: 30px;
 }
 
+.feature-list-image img {
+    width: 100%;
+}
+
 /* facts */
+.fact-heading {
+    width: 50%;
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+
+.some-fact-boxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fact-box {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 35px 40px;
+    text-align: center;
+
+}
+.fact-number{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
