@@ -22,8 +22,6 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 27%;
     background-position: fixed;
-    /* scale: 0.75; */
-    /* zoom: 0.75; */
     zoom: 0.8;
 
 
@@ -55,7 +53,7 @@ body {
     justify-content: space-between;
     /* margin-top: 87px; */
     align-items: center;
-    
+
 }
 
 .nav-title {
@@ -233,17 +231,19 @@ facts
     margin-top: 130px;
     margin-bottom: 100px;
 }
-.fact-title{
+
+.fact-title {
     font-size: 45px;
 }
-.fact-sub-title{
+
+.fact-sub-title {
     color: #727272;
 }
 
 .some-fact-boxes {
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 
@@ -255,10 +255,11 @@ facts
     transition: width 1s, height 1s, transform 2s;
 
 }
-.fact-box:hover{
+
+.fact-box:hover {
     animation-delay: 2s;
     transform: rotate(360deg);
-    
+
 }
 
 .fact-number {
@@ -281,6 +282,13 @@ sponsor styles
     /* width: 50%; */
     margin-top: 150px;
     text-align: center;
+    
+}
+.sponsor-title{
+    font-size: 45px;
+}
+.sponsor-sub-title{
+    color: #727272;
 }
 
 .sponsor-list {
@@ -319,17 +327,74 @@ footer styles
 /* media queries */
 
 @media screen and (max-width:576px) {
-   .container{
-    margin: 0 auto;
-    width: 100%;
-   }
-    .nav-bar{
-        flex-direction: column;    
-    }
-    .features{
+    body {
+        background-size: 100% 16.5%;
+        margin-left: 50px;
+        margin-right: 50px;
 
     }
-    .banner-section{
+
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+    }
+    .features {
+        padding-left: 0px;
+    }
+    .feature-mobile{
+        margin-left: 0;
+    }
+
+    .quick-list-section {
+        margin-top: 80px;
+    }
+
+    .quick-list {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .quick-list-images {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    .quick-list-heading {
+        text-align: center;
+    }
+
+    .banner-section {
         margin-top: 20px;
     }
-   }
+    .feature-list-section{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .experience-button{
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+        /* scale: 0.5; */
+    }
+    .fact-heading{
+        width: 100%;
+        text-align: center;
+    }
+    .some-fact-boxes{
+        flex-direction: column;
+    }
+    .sponsor-title{
+        margin-top: -100px;
+    }
+    .sponsor-list{
+        flex-wrap: wrap;
+    }
+    .footer-container{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
