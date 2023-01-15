@@ -11,13 +11,24 @@
 body {
     font-family: 'Work Sans', sans-serif;
     /* margin: auto 240px; */
-    width: 75vw;
+    /* width: 75vw; */
     padding: 0;
-    /* border: 2px solid red; */
-    /* min-height: 1322px; */
-    margin: 0 auto;
-    /* background: rgba(255, 144, 14, 0.1); */
+    margin-bottom: 130px;
 
+    /* border: 2px solid red; */
+    /* height: 1322px; */
+    /* margin: 0 auto; */
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: auto 1322px;
+
+
+}
+
+.container {
+    width: 75vw;
+    margin: 0 auto;
+    
 }
 
 .primary-button {
@@ -62,7 +73,7 @@ body {
 }
 
 /* banner styles */
-.banner-container {
+.banner-section {
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -94,8 +105,10 @@ body {
 }
 
 .banner-image img {
-    width: 100%;
+    width: 75%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -108,7 +121,7 @@ body {
 }
 
 /* quick list styles */
-.quick-list-container {
+.quick-list-section {
     margin-top: 50px;
 }
 
@@ -127,7 +140,7 @@ body {
 }
 
 /* feature list styles */
-.feature-list-container {
+.feature-list-section {
     margin-top: 130px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -152,7 +165,9 @@ body {
 }
 
 .feature-list-image img {
+    /* height: auto; */
     width: 100%;
+
 }
 
 /* facts */
@@ -170,11 +185,57 @@ body {
 .fact-box {
     border: 1px solid #FF900E;
     border-radius: 8px;
-    padding: 35px 40px;
+    padding: 35px;
     text-align: center;
 
 }
-.fact-number{
+
+.fact-number {
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+/* sponsor styles */
+.sponsor-section {
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+}
+
+.sponsor-heading {
+    /* width: 50%; */
+    margin-top: 150px;
+    text-align: center;
+}
+
+.sponsor-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+.sponsor-image img {
+    scale: 0.65;
+    filter: brightness(30%);
+
+}
+
+/* footer styles */
+.footer-container{
+    width: 75vw;
+    margin: 130px auto;
+}
+.footer-section {
+    background: #FFF4E7;
+    border-radius: 8px;
+    margin-top: 130px;
+    min-height: 100px;
+    margin-bottom: 200px;
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
 }
